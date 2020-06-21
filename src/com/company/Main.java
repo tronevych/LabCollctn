@@ -126,7 +126,7 @@ public class Main {
                 "---------- Update  1000 elements  on the  beginning ---------");
         LocalDateTime arrayListBeginStartUpdt = LocalDateTime.now();
         for (int i = 0; i < 1000; i++) {
-            arrayList.set(i,i);
+            arrayList.set(i,i + 10);
         }
         LocalDateTime arrayListBeginFinishUpdt = LocalDateTime.now();
         System.out.println("  Array List updating 1000 elements need to start : "
@@ -147,7 +147,7 @@ public class Main {
                 "------------ Update 1000 elements  on the  middle --------------");
         LocalDateTime arrayListMiddleStartUpdt = LocalDateTime.now();
         for (int i = 0; i < 1000; i++) {
-            arrayList.set(50000+ i,i);
+            arrayList.set(50000+ i,i + 10);
         }
         LocalDateTime arrayListMiddleFinishUpdt = LocalDateTime.now();
         System.out.println("  Array List updating 1000 elements on middle needs: "
@@ -156,7 +156,7 @@ public class Main {
 
         LocalDateTime linkedListMiddleStartUpdt = LocalDateTime.now();
         for (int i = 0; i < 1000; i++) {
-            linkedList.set(5000 + i,i);
+            linkedList.set(5000 + i,i + 10);
         }
         LocalDateTime linkedListMiddleFinishUpdt = LocalDateTime.now();
         System.out.println("  Linked List updating 1000 elements on middle needs: "
@@ -168,7 +168,7 @@ public class Main {
                 "------------ Update 1000 elements  on the  end --------------");
         LocalDateTime arrayListEndStartUpdt = LocalDateTime.now();
         for (int i = 0; i < 1000; i++) {
-            arrayList.set(arrayList.size()-1000+i,i);
+            arrayList.set(arrayList.size()-1000+i,i + 10);
         }
         LocalDateTime arrayListEndFinishUpdt = LocalDateTime.now();
         System.out.println("  Array List updating 1000 elements on end needs: "
@@ -177,7 +177,7 @@ public class Main {
 
         LocalDateTime linkedListEndStartUpdt = LocalDateTime.now();
         for (int i = 0; i < 1000; i++) {
-            linkedList.set(linkedList.size()-1000+i,i);
+            linkedList.set(linkedList.size()-1000+i,i + 10);
         }
         LocalDateTime linkedListEndFinishUpdt = LocalDateTime.now();
         System.out.println("  Linked List updating 1000 elements on end needs: "
